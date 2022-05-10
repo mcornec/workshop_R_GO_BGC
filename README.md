@@ -63,8 +63,9 @@ Version 2.1: January 2022
 ## COMMENTS, BUGS etc.?
 Please feel free to use the GitHub Issues and Pull Requests features to report any problems with this code and to suggest bug fixes.
 
-## TOOLBOX VIDEO TUTORIAL
-https://www.youtube.com/watch?v=w_6pEGNXQQ4&feature=youtu.be
+## TOOLBOX  TUTORIAL
+https://www.youtube.com/watch?v=w_6pEGNXQQ4&feature=youtu.be (VIDEO)
+https://github.com/287408731/BGC-Argo-toolbox-figure/blob/main/demo-copy.md (Notebook)
 
 ## BGC-ARGO GUIDE
 More detailed information about quality control flags, raw and adjusted modes, etc., can be found in

@@ -29,6 +29,7 @@ path_code = "/Users/yibinhuang/Downloads/workshop_R_GO_BGC-main"
 # Load the functions and libraries--------------------------------
 setwd(path_code)
 func.sources = list.files(path_code,pattern="*.R")
+func.sources=func.sources[-which(func.sources=="demo.Rmd")]
 func.sources = func.sources[which(func.sources %in% c('Main_workshop.R',
                                                       "bgc_argo_workshop_R_license.R")==F)]
 
