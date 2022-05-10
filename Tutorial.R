@@ -23,14 +23,13 @@ rm(list = ls())
 
 # Fill here the path to the code directory, you can instead set the code
 # directory as the working directory with setwd()
-path_code = "/Users/yibinhuang/Downloads/workshop_R_GO_BGC-main"
+path_code = "/Users/yibinhuang/Downloads/workshop_R_GO_BGC-Yibin 2"
 
 
 # Load the functions and libraries--------------------------------
 setwd(path_code)
 func.sources = list.files(path_code,pattern="*.R")
-func.sources=func.sources[-which(func.sources=="demo.Rmd")]
-func.sources = func.sources[which(func.sources %in% c('Main_workshop.R',
+func.sources = func.sources[which(func.sources %in% c('Tutorial.R',
                                                       "bgc_argo_workshop_R_license.R")==F)]
 
 if(length(grep("Rproj",func.sources))!=0){
