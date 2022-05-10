@@ -1,11 +1,8 @@
-show_sections <- function(float_ids=Setting$demo_float, 
+show_time_series<- function(float_ids=Setting$demo_float, 
                           variables="DOXY",
                           float_profs=NULL,
-                          plot_isopyc=1, 
-                          plot_mld=0, 
-                          max_depth=NULL, 
+                          plot_depth=20, 
                           raw="no", 
-                          obs="off", 
                           qc_flags=0:9) {
   # DESCRIPTION:
   #  This an intermediary function that  downloads profile(s) for the given
@@ -33,7 +30,7 @@ show_sections <- function(float_ids=Setting$demo_float,
   #                        default: 'no' (i.e., plot adjusted data if available)
   #   obs = 'on' / 'off  : if 'on', add dots at the depths of observations
   #                        default: 'on'; use 'off' to turn off this behavior
-  #   qc                 : show only values with the given QC flags (as an array)
+  #   qc_flags                 : show only values with the given QC flags (as an array)
   #                        0: no QC was performed; 
   #                        1: good data; 
   #                        2: probably good data;
@@ -71,36 +68,33 @@ show_sections <- function(float_ids=Setting$demo_float,
   
   # download Sprof files if necessary
   good_float_ids = download_multi_floats(float_ids)
-  
+
   if ( length(good_float_ids) == 0 ) {
     warning('no valid floats found')
   } else {
+    
     nvars = length(variables)
     # add the necessary variables now, but don't plot their profiles
-    if ( plot_isopyc | plot_mld ) {
-      if (!any(variables == 'TEMP')) {
-        variables = c(variables, 'TEMP')            
-      }
-      if (!any(variables == 'PSAL')) {
-        variables = c(variables, 'PSAL')            
-      }
+    
+    if (!any(variables == 'TEMP')) {
+      variables = c(variables, 'TEMP')            
+    }
+    if (!any(variables == 'PSAL')) {
+      variables = c(variables, 'PSAL')            
     }
     
     loaded = load_float_data(good_float_ids, variables,float_profs)
     Data = loaded$Data
     Mdata = loaded$Mdata
   
-    plot_sections(Data=Data, 
+    plot_time_series(Data=Data, 
                   Mdata=Mdata, 
                   variables=variables, 
                   nvars=nvars, 
-                  plot_isopyc=plot_isopyc, 
-                  plot_mld=plot_mld, 
-                  max_depth=max_depth, 
+                  plot_depth=plot_depth,
                   raw=raw, 
-                  obs=obs, 
                   qc_flags=qc_flags)
-  }
+  } # end for "if ( length(good_float_ids) == 0 )"
   
   return(good_float_ids)
-}
+} # end for "show_sections"
