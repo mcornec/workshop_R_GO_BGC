@@ -65,7 +65,7 @@ Please feel free to use the GitHub Issues and Pull Requests features to report a
 
 ## TOOLBOX  TUTORIAL
 https://www.youtube.com/watch?v=w_6pEGNXQQ4&feature=youtu.be (VIDEO)
-https://github.com/287408731/BGC-Argo-toolbox-figure/blob/main/demo-copy.md (Notebook)
+https://github.com/mcornec/workshop_R_GO_BGC/blob/Yibin/demo-notebook.md (Notebook)
 
 ## BGC-ARGO GUIDE
 More detailed information about quality control flags, raw and adjusted modes, etc., can be found in
