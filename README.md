@@ -32,7 +32,7 @@ show_profiles.R          : downloads float data and calls plot_profiles to creat
 show_sections.R          : downloads float data and calls plot_sections to create plot<br/>
 show_time_series.R       : downloads float data and calls plot_profiles to create plot<br/>
 show_trajectories.R      : downloads float data and calls plot_trajectories to create plot<br/>
-get_lon_lat_time.R       : extracts the longitude, latitude, and time information for the specified floats)<br/>
+get_lon_lat_time.R       : extracts the longitude, latitude, and time information for the specified floats<br/>
 Tutorial.R               : tutorial script for GO-BGC Scientific Workshop (6/30/21)<br/>
 ### Background functions (primarily called by main functions in background):
 
@@ -51,7 +51,7 @@ get_var_name_units.R     : returns the long variable name and units name for a g
 load_library.R           : load/install the required functions<br/>
 plot_profiles.R          : plots profiles of one or more specified float(s) for the specified variable(s)<br/>
 plot_sections.R          : plots sections of one or more specified float(s) for the specified variable(s)<br/>
-plot_time_series.R       : plots sections of one or more specified float(s) for the specified variable(s)<br/>
+plot_time_series.R       : plots time-series of one or more specified float(s) for the specified variable(s)<br/>
 plot_trajectories.R      : plots trajectories of one or more specified float(s)<br/>
 try_download.R           : attempts to download a file from any of the specified GDACs<br/>
 
