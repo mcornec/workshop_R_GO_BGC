@@ -60,7 +60,7 @@ You can open the corresponding R script file to check out the description of inp
 
 ## UPDATE RECORD
 Version 1 & 2: June 2021<br/>
-Version 2.1: January 2022
+Version 2.1: January 2022<br/>
 Version 3: May 2022
 
 ## COMMENTS, BUGS etc.?
