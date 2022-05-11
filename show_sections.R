@@ -90,16 +90,9 @@ show_sections <- function(float_ids=Setting$demo_float,
     Data = loaded$Data
     Mdata = loaded$Mdata
   
-    plot_sections(Data=Data, 
-                  Mdata=Mdata, 
-                  variables=variables, 
-                  nvars=nvars, 
-                  plot_isopyc=plot_isopyc, 
-                  plot_mld=plot_mld, 
-                  max_depth=max_depth, 
-                  raw=raw, 
-                  obs=obs, 
-                  qc_flags=qc_flags)
+    plot_sections(Data=Data, Mdata=Mdata, variables=variables, nvars=nvars, 
+                  plot_isopyc=plot_isopyc, plot_mld=plot_mld, 
+                  max_depth=max_depth, raw=raw, obs=obs, qc_flags=qc_flags)
   }
   
   return(good_float_ids)

@@ -21,11 +21,7 @@ show_time_series<- function(float_ids=Setting$demo_float,
   # OPTIONAL INPUTS:
   #   float_profs : float profile is an array with the per-float indices 
   #                 as returned by function "select_profiles";  
-  #   plot_isopyc        : plot isopycnal lines if set (default: 1=on)
-  #   plot_mld           : plot mixed layer depth, using either a 
-  #                        temperature criterion (mld=1) or a density
-  #                        criterion (mld=2); default: 0=off
-  #   max_depth          : maximum depth to be plotted (default: all)
+  #   plot_depth          : the desired depth to plot the time series (default: 20m)
   #   raw = 'yes'/'no'   : plot raw, i.e., unadjusted data if set to 'yes';
   #                        default: 'no' (i.e., plot adjusted data if available)
   #   obs = 'on' / 'off  : if 'on', add dots at the depths of observations
@@ -49,7 +45,7 @@ show_time_series<- function(float_ids=Setting$demo_float,
   # UPDATE RECORD: 
   #   Version 1 & 2:   June 2021 
   #   Version 2.1: January 2022 
-  #
+  #   Version 3: May 2022 
   # CITATION:
   #   M. Cornec (LOV, now at NOAA-PMEL), Y. Huang (NOAA-PMEL), Q. Jutard (OSU ECCE TERRA), R. Sauzede (IMEV) and 
   #   C. Schmechtig (OSU ECCE TERRA), 2021.

@@ -81,9 +81,7 @@ show_trajectories <- function(float_ids=Setting$demo_float,
       }
     }
     
-    g1 = plot_trajectories(Data=Data, 
-                           color=color, 
-                           title=title)
+    g1 = plot_trajectories(Data=Data, color=color, title=title)
     
     if ( return_ggplot ) {
       return(g1)

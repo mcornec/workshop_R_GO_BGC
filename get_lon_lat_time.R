@@ -22,7 +22,7 @@ get_lon_lat_time=function(float_ids, float_profs=NULL){
   # UPDATE RECORD: 
   #   Version 1:   June 2021 
   #   Version 1.1: January 2022 
-  #
+  #   Version 3: May 2022 
   # CITATION:
   #   M. Cornec (LOV), Y. Huang (NOAA-PMEL), Q. Jutard (OSU ECCE TERRA), R. Sauzede (IMEV) and 
   #   C. Schmechtig (OSU ECCE TERRA), 2021.

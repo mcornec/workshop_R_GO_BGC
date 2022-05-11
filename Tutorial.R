@@ -8,7 +8,8 @@
 # UPDATE RECORD: 
 #   Version 1 & 2:   June 2021 
 #   Version 2.1: January 2022 
-#
+#   Version 3: May 2022 
+
 # CITATION:
 #   M. Cornec (LOV, now at NOAA-PMEL), Y. Huang (NOAA-PMEL), Q. Jutard (OSU ECCE TERRA), R. Sauzede (IMEV) and 
 #   C. Schmechtig (OSU ECCE TERRA), 2021.
@@ -23,7 +24,7 @@ rm(list = ls())
 
 # Fill here the path to the code directory, you can instead set the code
 # directory as the working directory with setwd()
-path_code = ""
+path_code = "/Users/yibinhuang/Downloads/workshop_R_GO_BGC-Marin"
 
 
 # Load the functions and libraries--------------------------------
@@ -66,7 +67,7 @@ do_pause()
 float_idx <-which(Float$wmoid=='5906439') # float IDs for float #5906439 in the S_file index
 float_idx 
 
-prof_ids = c(Float$prof_idx1[float_idx]:Float$prof_idx2[float_idx]) # profile IDs for float #5906439 in the S_file index
+prof_ids = c(Float$bgc_prof_idx1[float_idx]:Float$bgc_prof_idx2[float_idx]) # profile IDs for float #5906439 in the S_file index
 prof_ids 
 
 dates = Sprof$date[prof_ids] # dates of each profile from float #5906439
@@ -399,7 +400,6 @@ show_time_series ( float_ids=HW_data$float_ids[4:5],
                    plot_depth=20, # tells the function to plot the time-series for the given depth 
                    raw="no"   # tell the function to plot the data with given quality flag level
 ) 
-
 
 
 
