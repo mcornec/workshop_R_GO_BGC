@@ -210,7 +210,8 @@ plot_time_series <- function(Data,
    g1= g1+theme (axis.text.x = element_text(size=16,colour = "black",face = "bold",family = "serif") )
    g1=g1+theme(legend.text = element_text(size = 16,face = 'bold',family = "serif"))#
    g1=g1+theme(legend.title=element_blank())#隐藏图例标题
-   g1
+   g1=g1+theme(plot.title = element_text(size = 16, face = "bold",family = "serif"))
+   
    x11()
    plot(g1)
    
