@@ -24,7 +24,7 @@ rm(list = ls())
 
 # Fill here the path to the code directory, you can instead set the code
 # directory as the working directory with setwd()
-path_code = "/Users/yibinhuang/Downloads/workshop_R_GO_BGC-Marin"
+path_code = ""
 
 
 # Load the functions and libraries--------------------------------
