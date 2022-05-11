@@ -102,8 +102,8 @@ plot_trajectories <- function(Data,
     labs(x =expression (bold(Longitude~"("~"°"~E~")")),
          y =expression (bold(Latitude~"("~"°"~N~")")) ) +
     theme(legend.text = element_text(size = 18,face = 'bold',family = "serif"))+
-    theme(legend.title=element_blank())
-   
+    theme(legend.title=element_blank())+
+    theme(plot.title = element_text(size = 16, face = "bold",family = "serif"))
   return(g1)
   
 }
