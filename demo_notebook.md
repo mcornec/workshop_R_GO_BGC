@@ -53,7 +53,19 @@ criteria in other functions.
 initialize_argo() # Take some minutes to download the global Index
 ```
 
-\[1\] “success!”
+\[1\] “Sprof index file will now be downloaded.”  
+\[1\] “Depending on your internet connection, this may take a while.”  
+\[1\] “Attempting download <https://usgodae.org/ftp/outgoing/argo/> into
+./Index/argo_synthetic-profile_index.txt.gz …”  
+\[1\] “success!”  
+\[1\] “prof index file will now be downloaded.”  
+\[1\] “Depending on your internet connection, this may take a while.”  
+\[1\] “Attempting download <https://usgodae.org/ftp/outgoing/argo/> into
+./Index/ar_index_global_prof.txt.gz …”  
+\[1\] “success!”  
+\[1\] “Note: 184 floats from Sprof index file do not have BGC sensors”  
+\[1\] “1672 true BGC floats were found”  
+\[1\] “15304 core and deep floats were found”
 
 ``` r
 float_idx <-which(Float$wmoid=='5906439') # Float IDs for float 5906439 (WMOID) in the S_file index
